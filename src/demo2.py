@@ -34,8 +34,8 @@ for scale in np.linspace(0.2, 1.0, 20)[::-1]:
     clone = np.dstack([edged, edged, edged])
     cv2.rectangle(clone, (maxLoc[0], maxLoc[1]),
                   (maxLoc[0] + tW, maxLoc[1] + tH), (0, 0, 255), 2)
-    cv2.imshow("Visualize", clone)
-    cv2.waitKey(0)
+    # cv2.imshow("Visualize", clone)
+    # cv2.waitKey(0)
 
     # if we have found a new maximum correlation value, then update
     # the bookkeeping variable
